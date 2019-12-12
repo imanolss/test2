@@ -1,0 +1,45 @@
+<h2>{{title}}</h2>
+
+<form action="{{action}}" method="post">
+  {{#if register}}
+  <p>¿Ya tienes cuenta?</p>
+  <a href="/login">Haz login</a>
+  <p>
+    <label for="">Nombre</label>
+    <input type="text" name="name" id="name" placeholder="name">
+  </p>
+  <p>
+    <label for="">Apellidos</label>
+    <input type="text" name="lastName" placeholder="Lastname">
+  </p>
+  <p>
+    <label for="">Usuario</label>
+    <input type="text" name="user" placeholder="user">
+  </p>
+  <p>
+    <label for="">Edad</label>
+    <input type="number" name="edad" placeholder="edad">
+  </p>
+  <p>
+    <label for="">Estatura</label>
+    <input type="number" name="estatura" placeholder="estatura">
+  </p>
+  <p>
+    <label for="">Peso</label>
+    <input type="number" name="peso" placeholder="peso">
+  </p>
+  <p>
+    <label for="">GEB</label>
+    <input type="number" name="GEB" placeholder="GEB">
+  </p>
+  {{/if}}
+  <p>
+    <label for="">Email</label>
+    <input type="email" name="email" placeholder="Email">
+  </p>
+  <p>
+    <label for="">Password</label>
+    <input type="password" name="password" placeholder="Password">
+  </p>
+  <input type="submit" value="{{button}}">
+</form>
